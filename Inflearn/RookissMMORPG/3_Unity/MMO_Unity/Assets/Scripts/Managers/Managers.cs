@@ -12,19 +12,26 @@ public class Managers : MonoBehaviour
     static Managers s_instance; // 유일성이 보장된다
     public static Managers instance { get { Init(); return s_instance; } } // 유일한 매니저를 갖고 온다
 
+    InputManager _input = new InputManager();
+    public static InputManager input { get { return instance._input; } }
 
     // Start is called before the first frame update
     void Start()
     {
         // 초기화
         /* Manager가 여러개가 있는 경우 덮어쓰는 문제 발생
-         * instance = this;
+         instance = this;
          */
         /* Find를 활용하여 Manager를 지정한 경우 해당 이름을 가진 오브젝트가 없는 경우 Null값이 되어 문제 발생
-         * GameObject go = GameObject.Find("@Managers");
-         * instance = go.GetComponent<Managers>();
+         GameObject go = GameObject.Find("@Managers");
+         instance = go.GetComponent<Managers>();
          */
         Init();
+    }
+
+    private void Update()
+    {
+        _input.OnUpdate();
     }
 
     static void Init()
