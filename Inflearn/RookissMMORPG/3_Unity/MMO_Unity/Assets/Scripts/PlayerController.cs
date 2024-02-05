@@ -65,8 +65,9 @@ public class PlayerController : MonoBehaviour
         MyVector newPos = from + dir * _speed;
         */
 
-        //Managers.input.KeyAction -= OnKeyboard;
-        //Managers.input.KeyAction += OnKeyboard;
+        // 구독
+        Managers.input.KeyAction -= OnKeyboard; // 중복 체크 대비용
+        Managers.input.KeyAction += OnKeyboard;
     }
 
     /* GameObject (Player)
