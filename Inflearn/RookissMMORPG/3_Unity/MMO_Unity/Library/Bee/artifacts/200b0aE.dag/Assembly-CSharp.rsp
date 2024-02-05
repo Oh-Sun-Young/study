@@ -354,8 +354,11 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Managers/InputManager.cs"
 "Assets/Scripts/Managers/Managers.cs"
+"Assets/Scripts/Managers/ResourceManager.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs"
+"Assets/Scripts/Scenes/03 Prefab/TankController.cs"
 -langversion:9.0
 
 /deterministic

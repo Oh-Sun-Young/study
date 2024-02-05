@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/02 Transform.unity
+- path: Assets/Scenes/03 Prefab.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{25634596-72EF-6BDD-9B4F-604CE48580E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_hada.shader">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="70" Column="48" />
-      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="26" Column="55" />
-      <File FileName="Assets/Scripts/Managers/InputManager.cs" Line="18" Column="1" />
-      <File FileName="Assets/Scripts/Player.cs" Line="10" Column="37" />
+      <File FileName="Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/Managers/InputManager.cs" Line="11" Column="2" />
+      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="54" Column="54" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="85" Column="46" />
+      <File FileName="Assets/Scripts/Scenes/03 Prefab/TankController.cs" Line="38" Column="48" />
+      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" Line="30" Column="6" />
+      <File FileName="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_hada.shader" Line="33" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">

@@ -13,7 +13,12 @@ public class Managers : MonoBehaviour
     static Managers instance { get { Init(); return s_instance; } } // 유일한 매니저를 갖고 온다
 
     InputManager _input = new InputManager();
+    ResourceManager _resource = new ResourceManager();
+
     public static InputManager input { get { return instance._input; } }
+    public static ResourceManager resource { get { return instance._resource; } }
+
+
 
     // Start is called before the first frame update
     void Start()
