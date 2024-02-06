@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/03 Prefab.unity
+- path: Assets/Scenes/04 Collision.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

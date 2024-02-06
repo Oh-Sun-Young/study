@@ -359,6 +359,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs"
 "Assets/Scripts/Scenes/03 Prefab/TankController.cs"
+"Assets/Scripts/Scenes/04 Collision/CollisionTest.cs"
 -langversion:9.0
 
 /deterministic

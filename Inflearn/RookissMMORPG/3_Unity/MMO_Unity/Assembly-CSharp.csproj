@@ -56,13 +56,14 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/Managers/ResourceManager.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs" />
     <Compile Include="Assets/Scripts/Managers/Managers.cs" />
+    <Compile Include="Assets/Scripts/Scenes/04 Collision/CollisionTest.cs" />
     <Compile Include="Assets/Scripts/Scenes/03 Prefab/TankController.cs" />
     <Compile Include="Assets/Scripts/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Managers/InputManager.cs" />
-    <Compile Include="Assets/Scripts/Managers/ResourceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />
