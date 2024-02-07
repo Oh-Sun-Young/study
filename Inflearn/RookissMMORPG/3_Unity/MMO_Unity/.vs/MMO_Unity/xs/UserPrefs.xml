@@ -1,21 +1,40 @@
 ﻿<Properties StartupConfiguration="{25634596-72EF-6BDD-9B4F-604CE48580E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scenes/04 Collision/CollisionTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="34" Column="10" />
-      <File FileName="Assets/Scripts/Managers/InputManager.cs" />
+      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="37" Column="26" />
+      <File FileName="Assets/Scripts/Managers/InputManager.cs" Line="21" Column="6" />
       <File FileName="Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs" />
-      <File FileName="Assets/Scripts/PlayerController.cs" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="71" Column="1" />
       <File FileName="Assets/Scripts/Scenes/03 Prefab/TankController.cs" />
-      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" />
+      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_hada.shader" />
-      <File FileName="Assets/Scripts/Scenes/04 Collision/CollisionTest.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Scenes/04 Collision/CollisionTest.cs" Line="5" Column="14" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MMO_Unity" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Resources" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="Managers" expanded="True" />
+                <Node name="PlayerController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="43a44fa8-8fd0-4ca6-a36c-5bd0f2701628" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a7db9a9e-1e10-4036-adc1-720d83593a0a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="12" column="1" />
+      <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="15" column="1" />
+      <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="14" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

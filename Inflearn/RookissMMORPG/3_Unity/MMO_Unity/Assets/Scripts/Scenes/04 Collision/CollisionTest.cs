@@ -23,4 +23,25 @@ public class CollisionTest : MonoBehaviour
     {
         Debug.Log($"Trigger @ {other.gameObject.name}!");
     }
+
+    private void Update()
+    {
+        /* Raycast Test */
+        Vector3 look = transform.TransformDirection(Vector3.forward);
+        Debug.DrawRay(transform.position + Vector3.up, look * 10, Color.red);
+
+        /* 단일
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + Vector3.up, look, out hit, 10))
+        {
+            Debug.Log($"Raycast {hit.collider.gameObject.name}!");
+        }
+        */
+
+        RaycastHit[] hits = Physics.RaycastAll(transform.position + Vector3.up, look, 10);
+        foreach(RaycastHit hit in hits)
+        {
+            Debug.Log($"Raycast {hit.collider.gameObject.name}!");
+        }
+    }
 }
