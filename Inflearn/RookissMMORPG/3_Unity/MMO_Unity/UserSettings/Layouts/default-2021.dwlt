@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 166
+  controlID: 58
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 89
+  controlID: 94
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,8 +319,8 @@ MonoBehaviour:
     y: 0
     width: 438
     height: 467
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -345,8 +345,8 @@ MonoBehaviour:
     y: 0
     width: 858
     height: 529
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -411,9 +411,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 72630000
-      m_LastClickedID: 25458
-      m_ExpandedIDs: 14f5ffff6cf5fffff0f6ffff34fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 32fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -472,7 +472,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 33
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -519,22 +519,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Scenes/04 Collision
+    - Assets/Scripts/Managers
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Scenes/04 Collision
+  - Assets/Scripts/Managers
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a630000
-    m_LastClickedID: 25418
-    m_ExpandedIDs: 00000000285d00002a5d00002c5d00002e5d0000305d0000325d0000345d0000365d0000385d000000ca9a3b
+    m_SelectedIDs: 50630000
+    m_LastClickedID: 25424
+    m_ExpandedIDs: 00000000325d0000345d0000365d0000385d00003a5d00003c5d00003e5d0000405d0000425d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -562,7 +562,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000285d00002a5d00002c5d00002e5d0000305d0000325d0000345d0000365d0000385d0000
+    m_ExpandedIDs: 00000000325d0000345d0000365d0000385d00003a5d00003c5d00003e5d0000405d0000425d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -935,9 +935,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.393105, y: 2.5080233, z: -3.4006057}
+    m_Target: {x: -1.7799044, y: 0.1642952, z: 0.22489214}
     speed: 2
-    m_Value: {x: 1.393105, y: 2.5080233, z: -3.4006057}
+    m_Value: {x: -1.7799044, y: 0.1642952, z: 0.22489214}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -984,13 +984,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3047543, y: -0.21606585, z: 0.07120712, w: 0.92486703}
+    m_Target: {x: 0.14906104, y: -0.51505494, z: 0.091503665, w: 0.83912736}
     speed: 2
-    m_Value: {x: 0.30475292, y: -0.21606487, z: 0.0712068, w: 0.92486286}
+    m_Value: {x: 0.14906041, y: -0.5150528, z: 0.091503285, w: 0.83912385}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 8.218954
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 7.3496313
   m_Ortho:
     m_Target: 0
     speed: 2

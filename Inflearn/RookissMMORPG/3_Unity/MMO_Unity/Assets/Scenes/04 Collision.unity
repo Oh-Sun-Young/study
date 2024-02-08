@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 107057409}
   - component: {fileID: 107057408}
   - component: {fileID: 107057407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube Two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 737302226}
   - component: {fileID: 737302225}
   - component: {fileID: 737302224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube One
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 1185236697}
   - component: {fileID: 1185236696}
   - component: {fileID: 1185236695}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
