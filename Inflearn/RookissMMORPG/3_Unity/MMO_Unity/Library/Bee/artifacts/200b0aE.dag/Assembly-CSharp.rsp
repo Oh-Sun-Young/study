@@ -352,14 +352,16 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/Controllers/CameraController.cs"
+"Assets/Scripts/Controllers/PlayerController.cs"
 "Assets/Scripts/Managers/InputManager.cs"
 "Assets/Scripts/Managers/Managers.cs"
 "Assets/Scripts/Managers/ResourceManager.cs"
 "Assets/Scripts/Player.cs"
-"Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs"
 "Assets/Scripts/Scenes/03 Prefab/TankController.cs"
 "Assets/Scripts/Scenes/04 Collision/CollisionTest.cs"
+"Assets/Scripts/Utils/Define.cs"
 -langversion:9.0
 
 /deterministic
