@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{25634596-72EF-6BDD-9B4F-604CE48580E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controllers/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controllers/CameraController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Scenes/04 Collision/CollisionTest.cs" Line="62" Column="13" />
-      <File FileName="Assets/Scripts/Controllers/CameraController.cs" Line="27" Column="47" />
-      <File FileName="Assets/Scripts/Utils/Define.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/Controllers/PlayerController.cs" Line="280" Column="10" />
-      <File FileName="Assets/Scripts/Managers/InputManager.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/Controllers/PlayerController.cs" Line="291" Column="1" />
+      <File FileName="Assets/Scripts/Controllers/CameraController.cs" Line="20" Column="28" />
+      <File FileName="Assets/Scripts/Utils/Define.cs" />
+      <File FileName="Assets/Scripts/Managers/InputManager.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d4898ec4-e2f6-405f-a9d0-b59c351383b5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="54f2f780-1011-4904-84b4-258e976f6120" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="12" column="1" />

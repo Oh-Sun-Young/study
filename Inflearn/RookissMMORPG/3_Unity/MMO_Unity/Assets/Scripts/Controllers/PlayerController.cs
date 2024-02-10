@@ -46,8 +46,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float _speed;
 
-    bool _moveToDest = false;
+    // bool _moveToDest = false;
     Vector3 _destPos;
+
+    Animator anim;
+    // float wait_run_ratio;
+    PlayerState _state = PlayerState.Idle;
+    public enum PlayerState
+    {
+        Die,
+        Moving,
+        Idle
+    }
 
     // float _yAngle = 0.0f;
 
@@ -68,10 +78,13 @@ public class PlayerController : MonoBehaviour
         MyVector newPos = from + dir * _speed;
         */
 
+        anim = GetComponent<Animator>();
+
         // 구독
+        /* 키보드로 움직임 제어
         Managers.input.KeyAction -= OnKeyboard; // 중복 체크 대비용
         Managers.input.KeyAction += OnKeyboard;
-
+         */
         Managers.input.MouseAction -= OnMouseClicked;
         Managers.input.MouseAction += OnMouseClicked;
     }
@@ -82,6 +95,7 @@ public class PlayerController : MonoBehaviour
      */
     void Update()
     {
+        /* State 패턴 적용
         if (_moveToDest)
         {
             Vector3 dir = _destPos - transform.position;
@@ -98,6 +112,51 @@ public class PlayerController : MonoBehaviour
                 // transform.LookAt(_destPos);
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 10 * Time.deltaTime);
             }
+        }
+         */
+
+        /* Animaiont Test
+         * 움직임을 자연스럽게 → Blend Tree 추가
+        if (_moveToDest)
+        {
+            anim.Play("RUN");
+        }
+        else
+        {
+            anim.Play("WAIT");
+        }
+         */
+
+        /* Animaiont Test
+         * Animation의 종류가 많아지면 유지보수 어려움 → State 패턴
+         * 하드코딩으로 인한 찜찜함
+         * 조건에 따른 분기 처리
+         * 스파게티 코드
+        if (_moveToDest)
+        {
+            wait_run_ratio = Mathf.Lerp(wait_run_ratio, 1, 10.0f * Time.deltaTime);
+            anim.SetFloat("wait_run_ratio", wait_run_ratio);
+            anim.Play("WAIT_RUN");
+        }
+        else
+        {
+            wait_run_ratio = Mathf.Lerp(wait_run_ratio, 0, 10.0f * Time.deltaTime);
+            anim.SetFloat("wait_run_ratio", wait_run_ratio);
+            anim.Play("WAIT_RUN");
+        }
+         */
+
+        switch (_state)
+        {
+            case PlayerState.Die:
+                UpdateDie();
+                break;
+            case PlayerState.Moving:
+                UpdateMoving();
+                break;
+            case PlayerState.Idle:
+                UpdateIdle();
+                break;
         }
 
         /* Rotation Test
@@ -256,7 +315,52 @@ public class PlayerController : MonoBehaviour
         }
         */
     }
+    #region 플레이어 상태
+    void UpdateDie()
+    {
+        // 아무것도 못함
+    }
 
+    void UpdateMoving()
+    {
+        Vector3 dir = _destPos - transform.position;
+
+        if (dir.magnitude < 0.0001f)
+        {
+            _state = PlayerState.Idle;
+        }
+        else
+        {
+            float moveDist = Mathf.Clamp(_speed * Time.deltaTime, 0, dir.magnitude);
+            transform.position += dir.normalized * moveDist;
+
+            // transform.LookAt(_destPos);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 10 * Time.deltaTime);
+        }
+        // 애니메이션 처리
+        /* Unity의 State Machine 사용
+         * 현재 게임에 대한 정보를 넘겨준다
+        wait_run_ratio = Mathf.Lerp(wait_run_ratio, 1, 10.0f * Time.deltaTime);
+        anim.SetFloat("wait_run_ratio", wait_run_ratio);
+        anim.Play("WAIT_RUN");
+         */
+        anim.SetFloat("speed", _speed);
+    }
+
+    void UpdateIdle()
+    {
+        // 애니메이션 처리
+        /* Unity의 State Machine 사용
+        wait_run_ratio = Mathf.Lerp(wait_run_ratio, 0, 10.0f * Time.deltaTime);
+        anim.SetFloat("wait_run_ratio", wait_run_ratio);
+        anim.Play("WAIT_RUN");
+         */
+        anim.SetFloat("speed", 0);
+    }
+    #endregion
+
+    #region 플레이어 움직임 제어
+    /* 키보드 제어
     void OnKeyboard()
     {
         if (Input.GetKey(KeyCode.W))
@@ -282,10 +386,15 @@ public class PlayerController : MonoBehaviour
 
         _moveToDest = false;
     }
+     */
 
     void OnMouseClicked(Define.MouseEvent evt)
     {
+        /*
         if (evt != Define.MouseEvent.Click)
+            return;
+        */
+        if (_state == PlayerState.Die)
             return;
 
         Debug.Log("OnMouseClicked");
@@ -297,7 +406,9 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100.0f, LayerMask.GetMask("Wall")))
         {
             _destPos = hit.point;
-            _moveToDest = true;
+            // _moveToDest = true;
+            _state = PlayerState.Moving;
         }
     }
+    #endregion
 }

@@ -60,10 +60,10 @@
     <Compile Include="Assets/Scripts/Controllers/CameraController.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/Utils/Define.cs" />
-    <Compile Include="Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs" />
+    <Compile Include="Assets/Scripts/Test/03 Prefab/PrefabTest.cs" />
     <Compile Include="Assets/Scripts/Managers/Managers.cs" />
-    <Compile Include="Assets/Scripts/Scenes/04 Collision/CollisionTest.cs" />
-    <Compile Include="Assets/Scripts/Scenes/03 Prefab/TankController.cs" />
+    <Compile Include="Assets/Scripts/Test/04 Collision/CollisionTest.cs" />
+    <Compile Include="Assets/Scripts/Test/03 Prefab/TankController.cs" />
     <Compile Include="Assets/Scripts/Controllers/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Managers/InputManager.cs" />
   </ItemGroup>

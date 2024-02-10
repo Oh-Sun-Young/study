@@ -358,9 +358,9 @@
 "Assets/Scripts/Managers/Managers.cs"
 "Assets/Scripts/Managers/ResourceManager.cs"
 "Assets/Scripts/Player.cs"
-"Assets/Scripts/Scenes/03 Prefab/PrefabTest.cs"
-"Assets/Scripts/Scenes/03 Prefab/TankController.cs"
-"Assets/Scripts/Scenes/04 Collision/CollisionTest.cs"
+"Assets/Scripts/Test/03 Prefab/PrefabTest.cs"
+"Assets/Scripts/Test/03 Prefab/TankController.cs"
+"Assets/Scripts/Test/04 Collision/CollisionTest.cs"
 "Assets/Scripts/Utils/Define.cs"
 -langversion:9.0
 
