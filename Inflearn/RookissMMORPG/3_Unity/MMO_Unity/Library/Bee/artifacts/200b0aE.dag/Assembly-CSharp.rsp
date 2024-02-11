@@ -361,6 +361,7 @@
 "Assets/Scripts/Test/03 Prefab/PrefabTest.cs"
 "Assets/Scripts/Test/03 Prefab/TankController.cs"
 "Assets/Scripts/Test/04 Collision/CollisionTest.cs"
+"Assets/Scripts/Test/06 Animation/CubeEventTest.cs"
 "Assets/Scripts/Utils/Define.cs"
 -langversion:9.0
 

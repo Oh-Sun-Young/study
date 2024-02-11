@@ -66,6 +66,7 @@
     <Compile Include="Assets/Scripts/Test/03 Prefab/TankController.cs" />
     <Compile Include="Assets/Scripts/Controllers/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Managers/InputManager.cs" />
+    <Compile Include="Assets/Scripts/Test/06 Animation/CubeEventTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />

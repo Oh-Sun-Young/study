@@ -357,6 +357,12 @@ public class PlayerController : MonoBehaviour
          */
         anim.SetFloat("speed", 0);
     }
+
+    // Animation Event Test
+    void OnRunEvent(string a)
+    {
+        Debug.Log($"뚜벅! 뚜벅! {a}");
+    }
     #endregion
 
     #region 플레이어 움직임 제어
@@ -397,7 +403,7 @@ public class PlayerController : MonoBehaviour
         if (_state == PlayerState.Die)
             return;
 
-        Debug.Log("OnMouseClicked");
+        // Debug.Log("OnMouseClicked");
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(Camera.main.transform.position, ray.direction * 100.0f, Color.red, 1.0f);
