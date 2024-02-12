@@ -1,21 +1,38 @@
 ﻿<Properties StartupConfiguration="{25634596-72EF-6BDD-9B4F-604CE48580E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controllers/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Test/07 UI/UI_Test.cs">
     <Files>
       <File FileName="Assets/Scripts/Test/06 Animation/CubeEventTest.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/Controllers/PlayerController.cs" Line="366" Column="15" />
+      <File FileName="Assets/Scripts/Controllers/PlayerController.cs" Line="121" Column="22" />
       <File FileName="Assets/Scripts/Controllers/CameraController.cs" />
-      <File FileName="Assets/Scripts/Utils/Define.cs" />
-      <File FileName="Assets/Scripts/Managers/InputManager.cs" />
+      <File FileName="Assets/Scripts/Utils/Define.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Managers/InputManager.cs" Line="21" Column="58" />
+      <File FileName="Assets/Scripts/Test/07 UI/UI_Test.cs" Line="58" Column="1" />
+      <File FileName="Assets/Scripts/Utils/Util.cs" Line="10" Column="25" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MMO_Unity" expanded="True" selected="True">
+            <Node name="Assets" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="27873add-7761-40c6-90ff-a656d5887fa0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d9c52049-221c-4a60-b4f0-cb1f1e6f8c47" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="12" column="1" />
       <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="15" column="1" />
       <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="14" column="1" />
+      <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Test/07 UI/UI_Test.cs" relfile="Assets/Scripts/Test/07 UI/UI_Test.cs" line="39" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

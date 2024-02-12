@@ -87,6 +87,8 @@ public class PlayerController : MonoBehaviour
          */
         Managers.input.MouseAction -= OnMouseClicked;
         Managers.input.MouseAction += OnMouseClicked;
+
+        Managers.resource.Instantiate("UI/UI_Test");
     }
 
     /* GameObject (Player)
