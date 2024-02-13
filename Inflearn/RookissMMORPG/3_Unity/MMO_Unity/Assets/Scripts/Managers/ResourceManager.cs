@@ -21,7 +21,7 @@ public class ResourceManager
         return Object.Instantiate(prefab, parent);
     }
 
-    public void Destroy(GameObject go, float t = 0.0f)
+    public void Destroy(GameObject go, float t = 0.5f)
     {
         if (go == null)
             return;

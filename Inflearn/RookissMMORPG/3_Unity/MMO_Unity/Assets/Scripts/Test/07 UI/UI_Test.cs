@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class UI_Test : MonoBehaviour
+public class UI_Test : UI_Popup
 {
-    // UI 자동화 필요
+    /* UI 자동화 필요
+     */
     [SerializeField]
     TextMeshProUGUI _text;
-
-    Dictionary<Type, UnityEngine.Object[]> _objects = new Dictionary<Type, UnityEngine.Object[]>();
 
     enum Buttons
     {
@@ -24,44 +24,65 @@ public class UI_Test : MonoBehaviour
         ScoreText
     }
 
-    // enum 목록을 넘겨주기 → 리플랙션 기능 활용
-    // 제너릭
-    void Bind<T>(Type type) where T : UnityEngine.Object
+    enum GameObjects
     {
-        string[] names = Enum.GetNames(type); // C# 문법
-
-        UnityEngine.Object[] objects = new UnityEngine.Object[names.Length];
-        _objects.Add(typeof(T), objects);
-
-        for(int i = 0; i < names.Length; i++)
-        {
-            objects[i] = Util.FindChild<T>(gameObject, names[i], true);
-        }
+        TestObject,
+        TestObject2
     }
 
-    T Get<T>(int idx) where T : UnityEngine.Object
+    enum Images
     {
-        UnityEngine.Object[] objects = null;
-
-        if (_objects.TryGetValue(typeof(T), out objects) == false)
-            return null;
-
-        return objects[idx] as T;
+        ItemIcon
     }
 
     int _score = 0;
 
     private void Start()
     {
+        Init();
+
+        /*
         Bind<Button>(typeof(Buttons));
         Bind<TextMeshProUGUI>(typeof(Texts));
+        Bind<GameObject>(typeof(GameObjects));
+        Bind<Image>(typeof(Images));
 
-        Get<TextMeshProUGUI>((int)Texts.ScoreText).text = "Bind Text";
+        GetText((int)Texts.ScoreText).text = "Bind Text";
+
+        //이벤트 코드 축약
+        //GameObject go = GetImage((int)Images.ItemIcon).gameObject;
+        //UI_EventHandler evt = go.GetComponent<UI_EventHandler>();
+        //evt.OnDragHandler += ((PointerEventData data) => { go.transform.position = data.position; });
+
+        GameObject go = GetImage((int)Images.ItemIcon).gameObject;
+        AddUIEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
+
+        //GetImage((int)Images.ItemIcon).gameObject.AddUIEvent((PointerEventData data) => { transform.position = data.position; }, Define.UIEvent.Drag); // extension method 적용
+
+        GetButton((int)Buttons.PointButton).gameObject.AddUIEvent(OnButtonClicked); // extension method 적용
+         */
     }
 
-    public void OnButtonClicked()
+    public override void Init()
     {
-        Debug.Log("Button Click!");
-        _text.text = $"Score : {++_score}";
+        base.Init();
+
+        Bind<Button>(typeof(Buttons));
+        Bind<TextMeshProUGUI>(typeof(Texts));
+        Bind<GameObject>(typeof(GameObjects));
+        Bind<Image>(typeof(Images));
+
+        GetText((int)Texts.ScoreText).text = "Bind Text";
+
+        GameObject go = GetImage((int)Images.ItemIcon).gameObject;
+        AddUIEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
+
+        GetButton((int)Buttons.PointButton).gameObject.AddUIEvent(OnButtonClicked);
+    }
+
+    public void OnButtonClicked(PointerEventData data)
+    {
+        // Debug.Log("Button Click!");
+        GetText((int)Texts.ScoreText).text = $"Score : {++_score}";
     }
 }

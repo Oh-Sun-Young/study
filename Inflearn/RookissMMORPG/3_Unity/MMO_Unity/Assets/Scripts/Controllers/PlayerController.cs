@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#region Vector Test
 /* 게임에서의 백터 
  * 1. 위치
  * 2. 방향 → 거리 크기와 실제 방향을 알 수 있음
@@ -40,6 +41,7 @@ struct MyVector
         return new MyVector(a.x * d, a.y * d, a.z * d);
     }
 }
+#endregion
 
 public class PlayerController : MonoBehaviour
 {
@@ -88,7 +90,10 @@ public class PlayerController : MonoBehaviour
         Managers.input.MouseAction -= OnMouseClicked;
         Managers.input.MouseAction += OnMouseClicked;
 
-        Managers.resource.Instantiate("UI/UI_Test");
+        // Managers.resource.Instantiate("UI/UI_Test");
+
+        UI_Test popup = Managers.ui.ShowPopupUI<UI_Test>();
+        // Managers.ui.ClosePopupUI(popup);
     }
 
     /* GameObject (Player)
@@ -363,7 +368,7 @@ public class PlayerController : MonoBehaviour
     // Animation Event Test
     void OnRunEvent(string a)
     {
-        Debug.Log($"뚜벅! 뚜벅! {a}");
+        // Debug.Log($"뚜벅! 뚜벅! {a}");
     }
     #endregion
 
