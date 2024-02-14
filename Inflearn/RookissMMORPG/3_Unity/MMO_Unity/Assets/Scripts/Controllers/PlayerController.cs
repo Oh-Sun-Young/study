@@ -92,8 +92,10 @@ public class PlayerController : MonoBehaviour
 
         // Managers.resource.Instantiate("UI/UI_Test");
 
-        UI_Test popup = Managers.ui.ShowPopupUI<UI_Test>();
+        //UI_Test popup = Managers.ui.ShowPopupUI<UI_Test>();
         // Managers.ui.ClosePopupUI(popup);
+
+        Managers.ui.ShowSceneUI<UI_Inven>();
     }
 
     /* GameObject (Player)

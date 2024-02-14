@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -55,11 +55,11 @@ public class UI_Test : UI_Popup
         //evt.OnDragHandler += ((PointerEventData data) => { go.transform.position = data.position; });
 
         GameObject go = GetImage((int)Images.ItemIcon).gameObject;
-        AddUIEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
+        BindEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
 
-        //GetImage((int)Images.ItemIcon).gameObject.AddUIEvent((PointerEventData data) => { transform.position = data.position; }, Define.UIEvent.Drag); // extension method 적용
+        //GetImage((int)Images.ItemIcon).gameObject.BindEvent((PointerEventData data) => { transform.position = data.position; }, Define.UIEvent.Drag); // extension method 적용
 
-        GetButton((int)Buttons.PointButton).gameObject.AddUIEvent(OnButtonClicked); // extension method 적용
+        GetButton((int)Buttons.PointButton).gameObject.BindEvent(OnButtonClicked); // extension method 적용
          */
     }
 
@@ -75,9 +75,9 @@ public class UI_Test : UI_Popup
         GetText((int)Texts.ScoreText).text = "Bind Text";
 
         GameObject go = GetImage((int)Images.ItemIcon).gameObject;
-        AddUIEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
+        BindEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
 
-        GetButton((int)Buttons.PointButton).gameObject.AddUIEvent(OnButtonClicked);
+        GetButton((int)Buttons.PointButton).gameObject.BindEvent(OnButtonClicked);
     }
 
     public void OnButtonClicked(PointerEventData data)

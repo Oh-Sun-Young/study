@@ -6,9 +6,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UI_Base : MonoBehaviour
+public abstract class UI_Base : MonoBehaviour
 {
     Dictionary<Type, UnityEngine.Object[]> _objects = new Dictionary<Type, UnityEngine.Object[]>();
+
+    public abstract void Init();
 
     // 바인딩(binding) : 프로그램에 사용된 구성 요소의 실제 값 또는 프로퍼티를 결정짓는 행위
     // enum 목록을 넘겨주기 → 리플랙션 기능 활용
@@ -42,12 +44,13 @@ public class UI_Base : MonoBehaviour
         return objects[idx] as T;
     }
 
+    protected GameObject GetObject(int idx) { return Get<GameObject>(idx); }
     protected TextMeshProUGUI GetText(int idx) { return Get<TextMeshProUGUI>(idx); }
     protected Button GetButton(int idx) { return Get<Button>(idx); }
     protected Image GetImage(int idx) { return Get<Image>(idx); }
     protected RawImage GetRawImage(int idx) { return Get<RawImage>(idx); }
 
-    public static void AddUIEvent(GameObject go, Action<PointerEventData> action, Define.UIEvent type = Define.UIEvent.Click)
+    public static void BindEvent(GameObject go, Action<PointerEventData> action, Define.UIEvent type = Define.UIEvent.Click)
     {
         UI_EventHandler evt = Util.GetOrAddComponent<UI_EventHandler>(go);
 
