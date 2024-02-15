@@ -56,27 +56,33 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/Scenes/GameScene.cs" />
     <Compile Include="Assets/Scripts/Managers/ResourceManager.cs" />
     <Compile Include="Assets/Scripts/Utils/Extension.cs" />
     <Compile Include="Assets/Scripts/Controllers/CameraController.cs" />
     <Compile Include="Assets/Scripts/Utils/Util.cs" />
+    <Compile Include="Assets/Scripts/UI/Scene/UI_Inven.cs" />
     <Compile Include="Assets/Scripts/UI/UI_Base.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/Utils/Define.cs" />
     <Compile Include="Assets/Scripts/Test/03 Prefab/PrefabTest.cs" />
     <Compile Include="Assets/Scripts/Managers/Managers.cs" />
+    <Compile Include="Assets/Scripts/Scenes/BaseScene.cs" />
     <Compile Include="Assets/Scripts/UI/Popup/UI_Popup.cs" />
     <Compile Include="Assets/Scripts/Test/04 Collision/CollisionTest.cs" />
     <Compile Include="Assets/Scripts/Test/03 Prefab/TankController.cs" />
+    <Compile Include="Assets/Scripts/Scenes/LoginScene.cs" />
+    <Compile Include="Assets/Scripts/UI/SubItem/UI_Inven_Item.cs" />
     <Compile Include="Assets/Scripts/Test/06 Animation/CubeEventTest.cs" />
+    <Compile Include="Assets/Scripts/Managers/SoundManager.cs" />
     <Compile Include="Assets/Scripts/Controllers/PlayerController.cs" />
     <Compile Include="Assets/Scripts/UI/Scene/UI_Scene.cs" />
+    <Compile Include="Assets/Scripts/Managers/SceneManagerEx.cs" />
+    <Compile Include="Assets/Scripts/Test/09 Sound/TestSound.cs" />
     <Compile Include="Assets/Scripts/Managers/InputManager.cs" />
     <Compile Include="Assets/Scripts/UI/UI_EventHandler.cs" />
     <Compile Include="Assets/Scripts/Managers/UIManager.cs" />
     <Compile Include="Assets/Scripts/Test/07 UI/UI_Test.cs" />
-    <Compile Include="Assets/Scripts/UI/Scene/UI_Inven.cs" />
-    <Compile Include="Assets/Scripts/UI/SubItem/UI_Inven_Item.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />
@@ -100,7 +106,7 @@
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/Resources/Art/UnityChan/Sounds/unity-chan_voice_list.txt" />
+    <None Include="Assets/Resources/Sounds/UnityChan/unity-chan_voice_list.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_hada_blend.shader" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_eye.shader" />
@@ -777,6 +783,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
@@ -821,9 +830,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -14,10 +14,14 @@ public class Managers : MonoBehaviour
 
     InputManager _input = new InputManager();
     ResourceManager _resource = new ResourceManager();
+    SceneManagerEx _scene = new SceneManagerEx();
+    SoundManager _sound = new SoundManager();
     UIManager _ui = new UIManager();
 
     public static InputManager input { get { return instance._input; } }
     public static ResourceManager resource { get { return instance._resource; } }
+    public static SceneManagerEx scene { get { return instance._scene; } }
+    public static SoundManager sound { get { return instance._sound; } }
     public static UIManager ui { get { return instance._ui; } }
 
     // Start is called before the first frame update
@@ -52,6 +56,16 @@ public class Managers : MonoBehaviour
             }
             DontDestroyOnLoad(go);
             s_instance = go.GetComponent<Managers>();
+
+            s_instance._sound.Init();
         }
+    }
+
+    public static void Clear()
+    {
+        sound.Clear();
+        input.Clear();
+        scene.Clear();
+        ui.Clear();
     }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 #region Vector Test
 /* 게임에서의 백터 
@@ -89,13 +87,6 @@ public class PlayerController : MonoBehaviour
          */
         Managers.input.MouseAction -= OnMouseClicked;
         Managers.input.MouseAction += OnMouseClicked;
-
-        // Managers.resource.Instantiate("UI/UI_Test");
-
-        //UI_Test popup = Managers.ui.ShowPopupUI<UI_Test>();
-        // Managers.ui.ClosePopupUI(popup);
-
-        Managers.ui.ShowSceneUI<UI_Inven>();
     }
 
     /* GameObject (Player)
