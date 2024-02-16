@@ -13,12 +13,14 @@ public class Managers : MonoBehaviour
     static Managers instance { get { Init(); return s_instance; } } // 유일한 매니저를 갖고 온다
 
     InputManager _input = new InputManager();
+    PoolManager _pool = new PoolManager();
     ResourceManager _resource = new ResourceManager();
     SceneManagerEx _scene = new SceneManagerEx();
     SoundManager _sound = new SoundManager();
     UIManager _ui = new UIManager();
 
     public static InputManager input { get { return instance._input; } }
+    public static PoolManager pool { get { return instance._pool; } }
     public static ResourceManager resource { get { return instance._resource; } }
     public static SceneManagerEx scene { get { return instance._scene; } }
     public static SoundManager sound { get { return instance._sound; } }

@@ -1,18 +1,10 @@
 ﻿<Properties StartupConfiguration="{25634596-72EF-6BDD-9B4F-604CE48580E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/UI_Base.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Managers/PoolManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Managers/SoundManager.cs" Line="72" Column="32" />
-      <File FileName="Assets/Scripts/Utils/Define.cs" Line="19" Column="17" />
-      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" Line="12" Column="23" />
-      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="69" Column="20" />
-      <File FileName="Assets/Scripts/Test/09 Sound/TestSound.cs" Line="24" Column="48" />
-      <File FileName="Assets/Scripts/Managers/SceneManagerEx.cs" Line="20" Column="20" />
-      <File FileName="Assets/Scripts/Managers/InputManager.cs" Line="45" Column="10" />
-      <File FileName="Assets/Scripts/Managers/UIManager.cs" Line="147" Column="25" />
-      <File FileName="Assets/Scripts/UI/UI_EventHandler.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/UI/SubItem/UI_Inven_Item.cs" Line="26" Column="25" />
-      <File FileName="Assets/Scripts/Utils/Extension.cs" Line="16" Column="22" />
-      <File FileName="Assets/Scripts/UI/UI_Base.cs" Line="53" Column="24" />
+      <File FileName="Assets/Scripts/Managers/Poolable.cs" Line="7" Column="21" />
+      <File FileName="Assets/Scripts/Managers/PoolManager.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="23" Column="30" />
+      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" Line="16" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,7 +18,9 @@
               </Node>
               <Node name="Scripts" expanded="True">
                 <Node name="Controllers" expanded="True" />
-                <Node name="Managers" expanded="True" />
+                <Node name="Managers" expanded="True">
+                  <Node name="PoolManager.cs" selected="True" />
+                </Node>
                 <Node name="Scenes" expanded="True" />
                 <Node name="Test" expanded="True">
                   <Node name="09 Sound" expanded="True" />
@@ -34,7 +28,6 @@
                 <Node name="UI" expanded="True">
                   <Node name="Scene" expanded="True" />
                   <Node name="SubItem" expanded="True" />
-                  <Node name="UI_Base.cs" selected="True" />
                 </Node>
                 <Node name="Utils" expanded="True" />
               </Node>
@@ -46,7 +39,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c4d4778b-1262-4cd5-85a8-5d1045ce4e0f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5acd149a-7656-4bd2-9399-ac4f34e2aa08" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="12" column="1" />

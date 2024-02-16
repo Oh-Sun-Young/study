@@ -83,6 +83,8 @@
     <Compile Include="Assets/Scripts/UI/UI_EventHandler.cs" />
     <Compile Include="Assets/Scripts/Managers/UIManager.cs" />
     <Compile Include="Assets/Scripts/Test/07 UI/UI_Test.cs" />
+    <Compile Include="Assets/Scripts/Managers/PoolManager.cs" />
+    <Compile Include="Assets/Scripts/Managers/Poolable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />
