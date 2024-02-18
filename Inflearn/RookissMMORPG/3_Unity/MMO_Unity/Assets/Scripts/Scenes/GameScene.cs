@@ -16,6 +16,9 @@ public class GameScene : BaseScene
         //Managers.ui.ClosePopupUI(popup);
 
         Managers.ui.ShowSceneUI<UI_Inven>();
+
+        for (int i = 0; i < 5; i++)
+            Managers.resource.Instantiate("UnityChan");
     }
 
     public override void Clear()

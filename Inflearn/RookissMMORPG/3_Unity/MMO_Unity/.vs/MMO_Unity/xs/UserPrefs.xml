@@ -1,45 +1,17 @@
 ﻿<Properties StartupConfiguration="{25634596-72EF-6BDD-9B4F-604CE48580E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Managers/PoolManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scenes/GameScene.cs">
     <Files>
-      <File FileName="Assets/Scripts/Managers/Poolable.cs" Line="7" Column="21" />
-      <File FileName="Assets/Scripts/Managers/PoolManager.cs" Line="29" Column="1" />
-      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="23" Column="30" />
-      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" Line="16" Column="36" />
+      <File FileName="Assets/Scripts/Managers/PoolManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Managers/Poolable.cs" />
+      <File FileName="Assets/Scripts/Managers/Managers.cs" Line="74" Column="22" />
+      <File FileName="Assets/Scripts/Managers/ResourceManager.cs" Line="64" Column="20" />
+      <File FileName="Assets/Scripts/Scenes/LoginScene.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/Scenes/GameScene.cs" Line="19" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MMO_Unity" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="Sounds" expanded="True">
-                  <Node name="UnityChan" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="Controllers" expanded="True" />
-                <Node name="Managers" expanded="True">
-                  <Node name="PoolManager.cs" selected="True" />
-                </Node>
-                <Node name="Scenes" expanded="True" />
-                <Node name="Test" expanded="True">
-                  <Node name="09 Sound" expanded="True" />
-                </Node>
-                <Node name="UI" expanded="True">
-                  <Node name="Scene" expanded="True" />
-                  <Node name="SubItem" expanded="True" />
-                </Node>
-                <Node name="Utils" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5acd149a-7656-4bd2-9399-ac4f34e2aa08" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="891f1263-bcef-4528-bdd5-d37fdd3c3dd0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets/Scripts/Managers/DebugTest.cs" relfile="Assets/Scripts/Managers/DebugTest.cs" line="12" column="1" />
