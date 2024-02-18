@@ -10,7 +10,7 @@ public class LoginScene : BaseScene
         base.Init();
 
         SceneType = Define.Scene.Login;
-
+        /* Pooling Object Test
         List<GameObject> list = new List<GameObject>();
 
         for (int i = 0; i < 10; i++)
@@ -18,6 +18,7 @@ public class LoginScene : BaseScene
 
         foreach (GameObject obj in list)
             Managers.resource.Destroy(obj);
+         */
     }
 
     private void Update()
