@@ -85,11 +85,14 @@
     <Compile Include="Assets/Scripts/UI/UI_EventHandler.cs" />
     <Compile Include="Assets/Scripts/Managers/UIManager.cs" />
     <Compile Include="Assets/Scripts/Test/07 UI/UI_Test.cs" />
+    <Compile Include="Assets/Scripts/Managers/DataManager.cs" />
+    <Compile Include="Assets/Scripts/Data/Data.Contents.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/Resources/Data/StatData.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_hair_ds.shader" />

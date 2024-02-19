@@ -71,6 +71,44 @@ public class GameScene : BaseScene
             }
         }
     }
+
+    Coroutine co;
+    IEnumerator CoStopExplode(float seconds)
+    {
+        Debug.Log("Stop Enter");
+        yield return new WaitForSeconds(seconds);
+        Debug.Log("Stop Execute!!");
+        if (co != null)
+        {
+            StopCoroutine(co);
+            co = null;
+        }
+    }
+
+    IEnumerator ExplodeAfterSeconds(float seconds)
+    {
+        Debug.Log("Explode Enter");
+        yield return new WaitForSeconds(seconds);
+        Debug.Log("Explode Execute!!");
+        co = null;
+    }
+    #endregion
+
+    #region Data Test
+    /* 하드코딩으로 작업시 발생하는 문제
+     * 1. 관리 차원 : 수정 할 때마다 프로그래머의 손을 거쳐야 함
+     * 2. 출시 후 긴급 업데이트를 할 경우 : 재배포 필요 → 바이너리 배포 → 앱스토어 배포 → 심사 기간
+     * → 수치와 관련된 정보를 따로 파일(Text, Json, XML)로 빼서 게임 실행시 파일을 로드하여 수치 적용
+     * → 추후 서버 작업할 때 서버와 클라이언트와 똑같은 파일을 로드  
+     */
+    class Knight
+    {
+        int hp = 0;
+        public void Init()
+        {
+            hp = 120;
+        }
+    }
     #endregion
 
     protected override void Init()
@@ -100,31 +138,14 @@ public class GameScene : BaseScene
             Test value = (Test)t;
             Debug.Log(value.id);
         }
-         */
 
         co = StartCoroutine("ExplodeAfterSeconds", 4.0f);
         // StopCoroutine(co);
         StartCoroutine("CoStopExplode", 2.0f);
-    }
-    Coroutine co;
-    IEnumerator CoStopExplode(float seconds)
-    {
-        Debug.Log("Stop Enter");
-        yield return new WaitForSeconds(seconds);
-        Debug.Log("Stop Execute!!");
-        if(co != null)
-        {
-            StopCoroutine(co);
-            co = null;
-        }
-    }
+         */
 
-    IEnumerator ExplodeAfterSeconds(float seconds)
-    {
-        Debug.Log("Explode Enter");
-        yield return new WaitForSeconds(seconds);
-        Debug.Log("Explode Execute!!");
-        co = null;
+        Managers.ui.ShowSceneUI<UI_Inven>();
+        Dictionary<int, Stat> dict = Managers.data.StatDict;
     }
 
     public override void Clear()
