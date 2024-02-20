@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 #region Vector Test
 /* 게임에서의 백터 
  * 1. 위치
@@ -325,14 +326,27 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 dir = _destPos - transform.position;
 
-        if (dir.magnitude < 0.0001f)
+        if (dir.magnitude < 0.1f)
         {
             _state = PlayerState.Idle;
         }
         else
         {
+            NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
             float moveDist = Mathf.Clamp(_speed * Time.deltaTime, 0, dir.magnitude);
-            transform.position += dir.normalized * moveDist;
+
+            Debug.DrawRay(transform.position, dir.normalized, Color.green);
+
+            if(Physics.Raycast(transform.position + Vector3.up * 0.5f, dir, 1.0f, LayerMask.GetMask("Block")))
+            {
+                _state = PlayerState.Idle;
+                return;
+            }
+
+            // nma.CalculatePath
+            nma.Move(dir.normalized * moveDist);
+
+            // transform.position += dir.normalized * moveDist;
 
             // transform.LookAt(_destPos);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 10 * Time.deltaTime);

@@ -60,6 +60,7 @@
     <Compile Include="Assets/Scripts/Managers/ResourceManager.cs" />
     <Compile Include="Assets/Scripts/Utils/Extension.cs" />
     <Compile Include="Assets/Scripts/Controllers/CameraController.cs" />
+    <Compile Include="Assets/Scripts/Data/Data.Contents.cs" />
     <Compile Include="Assets/Scripts/Utils/Util.cs" />
     <Compile Include="Assets/Scripts/UI/Scene/UI_Inven.cs" />
     <Compile Include="Assets/Scripts/UI/UI_Base.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets/Scripts/Test/06 Animation/CubeEventTest.cs" />
     <Compile Include="Assets/Scripts/Managers/SoundManager.cs" />
     <Compile Include="Assets/Scripts/Controllers/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/Managers/DataManager.cs" />
     <Compile Include="Assets/Scripts/UI/Scene/UI_Scene.cs" />
     <Compile Include="Assets/Scripts/Managers/PoolManager.cs" />
     <Compile Include="Assets/Scripts/Managers/SceneManagerEx.cs" />
@@ -85,13 +87,12 @@
     <Compile Include="Assets/Scripts/UI/UI_EventHandler.cs" />
     <Compile Include="Assets/Scripts/Managers/UIManager.cs" />
     <Compile Include="Assets/Scripts/Test/07 UI/UI_Test.cs" />
-    <Compile Include="Assets/Scripts/Managers/DataManager.cs" />
-    <Compile Include="Assets/Scripts/Data/Data.Contents.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/Resources/Art/Town/Readme.txt" />
     <None Include="Assets/Resources/Data/StatData.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
@@ -121,6 +122,7 @@
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_hair.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+    <None Include="Assets/Resources/Art/Town/Readme FIRST!.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_eye_blend.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
   </ItemGroup>
