@@ -335,7 +335,7 @@ public class PlayerController : MonoBehaviour
             NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
             float moveDist = Mathf.Clamp(_speed * Time.deltaTime, 0, dir.magnitude);
 
-            Debug.DrawRay(transform.position, dir.normalized, Color.green);
+            Debug.DrawRay(transform.position + Vector3.up * 0.5f, dir.normalized, Color.green);
 
             if(Physics.Raycast(transform.position + Vector3.up * 0.5f, dir, 1.0f, LayerMask.GetMask("Block")))
             {
