@@ -145,7 +145,9 @@ public class GameScene : BaseScene
          */
 
         Managers.ui.ShowSceneUI<UI_Inven>();
-        Dictionary<int, Stat> dict = Managers.data.StatDict;
+        Dictionary<int, Data.Stat> dict = Managers.data.StatDict;
+
+        gameObject.GetOrAddComponent<CursorController>();
     }
 
     public override void Clear()

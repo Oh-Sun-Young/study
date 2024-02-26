@@ -72,6 +72,7 @@
     <Compile Include="Assets/Scripts/Scenes/BaseScene.cs" />
     <Compile Include="Assets/Scripts/UI/Popup/UI_Popup.cs" />
     <Compile Include="Assets/Scripts/Test/04 Collision/CollisionTest.cs" />
+    <Compile Include="Assets/Scripts/Contents/Stat.cs" />
     <Compile Include="Assets/Scripts/Test/03 Prefab/TankController.cs" />
     <Compile Include="Assets/Scripts/Scenes/LoginScene.cs" />
     <Compile Include="Assets/Scripts/UI/SubItem/UI_Inven_Item.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets/Scripts/Managers/SoundManager.cs" />
     <Compile Include="Assets/Scripts/Controllers/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Managers/DataManager.cs" />
+    <Compile Include="Assets/Scripts/Contents/PlayerStat.cs" />
     <Compile Include="Assets/Scripts/UI/Scene/UI_Scene.cs" />
     <Compile Include="Assets/Scripts/Managers/PoolManager.cs" />
     <Compile Include="Assets/Scripts/Managers/SceneManagerEx.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Assets/Scripts/UI/UI_EventHandler.cs" />
     <Compile Include="Assets/Scripts/Managers/UIManager.cs" />
     <Compile Include="Assets/Scripts/Test/07 UI/UI_Test.cs" />
+    <Compile Include="Assets/Scripts/Controllers/CursorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku.shader" />
@@ -102,6 +105,7 @@
     <None Include="Assets/Textures and Sprites/SF UI/Background/LICENSE.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/Resources/Art/Knight/Sources/Modular_Armors/Shaders/PT_Armors_Shader_PBR.shader" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_fuku_ds.shader" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
@@ -117,6 +121,7 @@
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/Resources/Art/UnityChan/Shader/Unitychan_chara_eye.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets/Resources/Art/Knight/Sources/Modular_Armors/Shaders/PT_Armors_Shader_Toon.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />

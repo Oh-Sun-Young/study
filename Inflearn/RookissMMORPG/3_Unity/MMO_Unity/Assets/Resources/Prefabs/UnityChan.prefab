@@ -2816,6 +2816,8 @@ GameObject:
   - component: {fileID: 1130668759}
   - component: {fileID: 1130668760}
   - component: {fileID: 7854065104049216645}
+  - component: {fileID: 1130668762}
+  - component: {fileID: 1130668769}
   m_Layer: 0
   m_Name: UnityChan
   m_TagString: Untagged
@@ -2853,7 +2855,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 854fdfaeea8b8491cb681e36bfd8d3c0, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -2872,7 +2874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10e29bb8f3074cc5ba765b032615fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
 --- !u!54 &1130668759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2887,7 +2888,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &1130668760
 CapsuleCollider:
@@ -2916,6 +2917,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isUsing: 0
+--- !u!195 &1130668762
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8030462755659019587}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1130668769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8030462755659019587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c98c14e0ea4435e9f50b9dbbe47342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _level: 0
+  _hp: 0
+  _maxHp: 0
+  _attack: 0
+  _defense: 0
+  _moveSpeed: 0
+  _exe: 0
+  _gold: 0
 --- !u!1 &8030462755659019589
 GameObject:
   m_ObjectHideFlags: 0

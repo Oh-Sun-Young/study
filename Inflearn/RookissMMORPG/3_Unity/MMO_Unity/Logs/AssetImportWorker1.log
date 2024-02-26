@@ -1,0 +1,420 @@
+Unity Editor version:    2021.3.2f1 (d6360bedb9a0)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.2.1 (Build 22D68)
+Darwin version:          22.3.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49455
+Successfully changed project path to: /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity
+/Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 148.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+UDEA LE27 preferred device: AMD Radeon Pro 5300M (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 5300M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56965
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.2f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.2f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.2f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002200 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 146.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.265 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1266ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (964ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (610ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (220ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007105 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.195 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2197ms)
+		BeginReloadAssembly (292ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (148ms)
+		EndReloadAssembly (1683ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (662ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (700ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (451ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3455 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (42.2 KB). Loaded Objects now: 3939.
+Memory consumption went from 118.9 MB to 118.8 MB.
+Total: 4.872340 ms (FindLiveObjects: 0.397185 ms CreateObjectMapping: 0.316834 ms MarkObjects: 4.015454 ms  DeleteObjects: 0.141426 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004217 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.575 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1576ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1227ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (459ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (521ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3423 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (21.9 KB). Loaded Objects now: 3942.
+Memory consumption went from 117.4 MB to 117.4 MB.
+Total: 4.301034 ms (FindLiveObjects: 0.328128 ms CreateObjectMapping: 0.257946 ms MarkObjects: 3.681443 ms  DeleteObjects: 0.032172 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004264 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/ohsun7oung/Documents/GitHub/study/Inflearn/RookissMMORPG/3_Unity/MMO_Unity/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.626 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1627ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (1266ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (469ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (546ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (49ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3423 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (21.9 KB). Loaded Objects now: 3945.
+Memory consumption went from 118.6 MB to 118.5 MB.
+Total: 4.333249 ms (FindLiveObjects: 0.355724 ms CreateObjectMapping: 0.250667 ms MarkObjects: 3.703851 ms  DeleteObjects: 0.021749 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1033.313032 seconds.
+  path: Assets/Cursors/Cursors 256/Arrow_G.png
+  artifactKey: Guid(8b5dadc51cd688e41af88276b1df7cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Arrow_G.png using Guid(8b5dadc51cd688e41af88276b1df7cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41131fa45c2df3f4e8da04464e39dc9e') in 1.143581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Basic2_R.png
+  artifactKey: Guid(18998ef35f6b8474984b039c3366b132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Basic2_R.png using Guid(18998ef35f6b8474984b039c3366b132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7dc2c1dab53a06943d9a210ef0ee81a') in 0.027726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_Deff.png
+  artifactKey: Guid(147a888a28b5a5c4c98627d5b0df3f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_Deff.png using Guid(147a888a28b5a5c4c98627d5b0df3f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8911db2620db8eb44b7f0d379555c05') in 0.029745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_book.png
+  artifactKey: Guid(b742388d2f7855d41ab77f2ffbe4e558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_book.png using Guid(b742388d2f7855d41ab77f2ffbe4e558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a443a24d5d6372e3dbd4190154bd1693') in 0.026713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_Attack.png
+  artifactKey: Guid(cc0915b0b19d78844ab3123e2a2f1701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_Attack.png using Guid(cc0915b0b19d78844ab3123e2a2f1701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b95fcc19eebebf5c213a3f583c006e') in 0.025770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Settings.png
+  artifactKey: Guid(f6b5dd15dd6519e4aa3ad03b1da0876d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Settings.png using Guid(f6b5dd15dd6519e4aa3ad03b1da0876d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555989dec05dfc57c5a541fcd12b817d') in 0.026192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_Attack_G.png
+  artifactKey: Guid(ca99d9828f6fd5d4a8c4f2c9587aa7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_Attack_G.png using Guid(ca99d9828f6fd5d4a8c4f2c9587aa7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f1e390911d615adac8f6c5bcba53b4') in 0.023183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_book.png
+  artifactKey: Guid(93c702f3bedb38347bef6db980d3f55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_book.png using Guid(93c702f3bedb38347bef6db980d3f55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323e2075a84580d5eb1b52beec23f9fd') in 0.026297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Flask.png
+  artifactKey: Guid(8e9b03bafc3b9bb4c8c1ac546183ad6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Flask.png using Guid(8e9b03bafc3b9bb4c8c1ac546183ad6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7870b0ce6c1bf40bcfba72f0ada52f2d') in 0.025840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Attack_G.png
+  artifactKey: Guid(9d1d8711f810d3b478245db745d89b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Attack_G.png using Guid(9d1d8711f810d3b478245db745d89b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b8e185cf8ad338e3086f0435413586') in 0.024868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Hand.png
+  artifactKey: Guid(0f45821c9378469498c0044ff9068ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Hand.png using Guid(0f45821c9378469498c0044ff9068ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d99d367ccd05d5e8bc78f8a455808e') in 0.024529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Basic.png
+  artifactKey: Guid(87d28997275f30943a4bf1cdc156bb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Basic.png using Guid(87d28997275f30943a4bf1cdc156bb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec1325a204012076fd398c756381152') in 0.024311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Cursors/Cursors 256/Arrow_R.png
+  artifactKey: Guid(a0884ab356463e048a840e7c310098bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Arrow_R.png using Guid(a0884ab356463e048a840e7c310098bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aece9219646b1d7172258ed43113da20') in 0.021422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_Basic.png
+  artifactKey: Guid(81c11de65c5451d41a9a0eb359e343b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_Basic.png using Guid(81c11de65c5451d41a9a0eb359e343b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f34b82d4377d36e6a906c061d65c306') in 0.024459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Basic2.png
+  artifactKey: Guid(a5f9cc9a5efbe894eb85de4851711ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Basic2.png using Guid(a5f9cc9a5efbe894eb85de4851711ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85580faa4c9370a86008fd4f93899a7') in 0.024984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Move1.png
+  artifactKey: Guid(009bc0f57c177604a90b4697026d8c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Move1.png using Guid(009bc0f57c177604a90b4697026d8c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8862ad079f39e43155fc57728b41e8b') in 0.024906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Cursors/Cursors 256/Cursor_Basic2_G.png
+  artifactKey: Guid(486d9c27e3b5dd047967d6c94bbd7fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/Cursor_Basic2_G.png using Guid(486d9c27e3b5dd047967d6c94bbd7fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32693caf270bb4d36a02f8a55dce4b1') in 0.024904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.315094 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_loot.png
+  artifactKey: Guid(88a3efd142a70364eb0219ded72e16cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_loot.png using Guid(88a3efd142a70364eb0219ded72e16cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bd91a9a746a81f09b69f28b3bcb6e2') in 0.024679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_Move1.png
+  artifactKey: Guid(b46c0e8558f88124b90949b499fa801f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_Move1.png using Guid(b46c0e8558f88124b90949b499fa801f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2848201b354e00a06bf3fc541a7c6233') in 0.023586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.234663 seconds.
+  path: Assets/Cursors/Cursors 256/G_Cursor_Settings.png
+  artifactKey: Guid(8d61ce1a04c250b4799438ca6642dfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cursors/Cursors 256/G_Cursor_Settings.png using Guid(8d61ce1a04c250b4799438ca6642dfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc4ed9d567ab43fe461d621bc0a20d5') in 0.025097 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

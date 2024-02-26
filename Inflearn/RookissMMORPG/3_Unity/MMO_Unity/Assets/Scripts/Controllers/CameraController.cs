@@ -14,6 +14,13 @@ public class CameraController : MonoBehaviour
     GameObject _player = null;
 
     MeshRenderer mr;
+    Material _mat;
+    Material _matTransparent;
+
+    private void Start()
+    {
+        _matTransparent = Managers.resource.Load<Material>("Transparent");
+    }
 
     void LateUpdate()
     {
@@ -21,7 +28,8 @@ public class CameraController : MonoBehaviour
         {
             if(mr != null)
             {
-                mr.enabled = true;
+                mr.material = _mat;
+                //mr.enabled = true;
                 mr = null;
             }
 
@@ -31,7 +39,9 @@ public class CameraController : MonoBehaviour
                 float dist = (hit.point - _player.transform.position + Vector3.up * 5.5f).magnitude * 0.85f;
                 transform.position = _player.transform.position + _delta.normalized * dist;
                 mr = hit.transform.gameObject.GetComponent<MeshRenderer>();
-                mr.enabled = false;
+                _mat = mr.material;
+                mr.material = _matTransparent;
+                //mr.enabled = false;
             }
             else
             {
